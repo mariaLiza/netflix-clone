@@ -11,6 +11,20 @@ function App() {
         fetchUrl={requests.fetchNetflixOriginals}
       />
       <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
+    
+      <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
+  
+      <Row title="Action" fetchUrl={requests.fetchActionMovies} />
+    
+      <Row title="Comedies" fetchUrl={requests.fetchComedyMovies} />
+    
+      <Row title="Horror & Suspense" fetchUrl={requests.fetchHorrorMovies} />
+    
+      <Row title="Romance" fetchUrl={requests.fetchRomanceMovies} />
+    
+      <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
+    
+    
     </div>
   );
 }

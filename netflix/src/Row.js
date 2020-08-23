@@ -18,16 +18,6 @@ const Row = ({ title, fetchUrl }) => {
     fetchData();
   }, [fetchUrl]);
 
-//   let moviesDisplay = movies.map((movie) => {
-//     return (
-//       <img
-//         className="row__poster"
-//         src={`${baseUrl}${movie.poster_path}`}
-//         alt={movie.name}
-//       />
-//     );
-//   });
-
   return (
     <div className="row">
       <h2>{title}</h2>
@@ -35,6 +25,7 @@ const Row = ({ title, fetchUrl }) => {
       <div className="row__posters">
         {movies.map((movie) => (
           <img
+            key={movie.id}
             className="row__poster"
             src={`${baseUrl}${movie.poster_path}`}
             alt={movie.name}
