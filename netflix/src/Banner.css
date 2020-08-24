@@ -4,6 +4,13 @@
   height: 448px;
 }
 
+@media (max-width: 385px) {
+  .banner {
+    width: max-content;
+    position: relative;
+  }
+}
+
 .banner__contents {
   margin-left: 30px;
   padding-top: 140px;

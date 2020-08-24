@@ -4,6 +4,14 @@
   font-weight: 700;
 }
 
+@media (max-width: 385px) {
+  .row {
+    width: 120vw;
+    position: relative;
+    overflow: hidden;
+  }
+}
+
 .row__posters {
   display: flex;
   flex-direction: row;
