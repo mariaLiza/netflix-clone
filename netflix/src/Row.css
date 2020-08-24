@@ -1,5 +1,7 @@
 .row {
   margin-left: 20px;
+  color: white;
+  font-weight: 700;
 }
 
 .row__posters {
